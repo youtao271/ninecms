@@ -79,17 +79,11 @@
 
 <div class="container">
     <div class="row mb-3">
-        <div id="app">@{{message}}</div>
+        <div id="app">
+            <p>@{{message}}</p>
+            <input v-model="message">
+        </div>
     </div>
-    <script>
-        let app = new Vue({
-            el: '#app',
-            data: {
-                message: 'Hello Vue.js!'
-            }
-        })
-        console.log(app)
-    </script>
 
     <div class="row mb-3">
         <h1>Bootstrap grid examples</h1>
@@ -244,4 +238,14 @@
 <div class="container-xl themed-container">.container-xl</div>
 <div class="container-fluid themed-container">.container-fluid</div>
 </body>
+<script>
+    let app = new Vue({
+        el: '#app',
+        data: {
+            message: 'Hello Vue.js!'
+        }
+    })
+    //console.log(app)
+</script>
+
 </html>

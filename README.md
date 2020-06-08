@@ -1,2 +1,2 @@
 # ninecms
-A cms system
+A laravel cms system
